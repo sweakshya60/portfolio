@@ -15,9 +15,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: #0f0f0f;
+    width: 100%;
+    padding: 5px 20px;
 }
 .logo{
     color: white;
@@ -33,14 +36,17 @@ nav ul li {
     display: inline-block;
     padding: 10px 25px;
 }
-nav ul li a{
+nav ul a li{
     color:white;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
+    width: 150px;
+    text-align: center;
 }
-nav ul li a:hover{
+nav ul a li:hover{
     color:red;
+    background-color: #524d4d;
     transition: .4s;
 }
 .btn{
@@ -251,4 +257,7 @@ h5{
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
+}
+.main p{
+    text-align: justify;
 }
